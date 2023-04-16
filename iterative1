@@ -1,0 +1,43 @@
+
+    // pattern 1
+    let n=4;
+    for (let i = n; i >= 0; i--) {
+        s = "";
+        for (let j = 1; j <= i; j++) {
+            s = s + "*";
+        }
+        console.log(s);
+    }
+    console.log("/////////////////////////////////////////////");
+     // Pattern 2
+     n=4;
+    for (let i = 0; i <= n; i++) {
+        s = "";
+        for (let j = 0; j < i; j++) {
+            s = s + "*";
+        }
+        // s = s + "\n";
+        console.log(s);
+    }
+    console.log("/////////////////////////////////////////////");
+    // pattern 3
+     n=4;
+    for(let i=0;i<=n;i++){
+        let stars=i;
+        let spaces=n-i;
+        let line="";
+        for(j=0;j<=stars;j++) line+="_";
+        for(j=0;j<=spaces;j++) line+="*";
+        console.log(line);
+    }
+    console.log("/////////////////////////////////////////////");
+    // pattern 4
+     n=4;
+    for(let i=0;i<=n;i++){
+        let stars=n-i;
+        let spaces=i;
+        let line="";
+        for(j=0;j<=stars;j++) line+="_";
+        for(j=0;j<=spaces;j++) line+="*";
+        console.log(line);
+    }
